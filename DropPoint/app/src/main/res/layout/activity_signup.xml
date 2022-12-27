@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="111dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/dropPoint_logo" />
+
+
+    <TextView
+        android:id="@+id/signUpTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toEndOf="@id/logoImg"
+        android:gravity="center"
+        android:text="@string/create_new_account"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/postImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/signUpTitleText"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:contentDescription="@string/logo_icon_image"/>
+
+    <EditText
+        android:id="@+id/emailSignUpText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postImg"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:hint="@string/email"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/passwordSignUpText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailSignUpText"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableStart="@drawable/ic_baseline_key_24"
+        android:drawablePadding="20dp"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/bioSignUpText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordSignUpText"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableStart="@drawable/ic_baseline_newspaper_24"
+        android:drawablePadding="20dp"
+        android:hint="@string/tell_us_a_little_bit_about_yourself"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signUpBtn"
+        android:layout_width="302dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/bioSignUpText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/sign_upBtn"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        tools:ignore="TextContrastCheck" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_below="@id/signUpBtn"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/infoSignUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_registered"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/clickLoginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/login_here"
+            android:textColor="#E63991"
+            android:textStyle="bold" />
+    </TableRow>
+</RelativeLayout>

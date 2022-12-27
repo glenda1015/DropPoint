@@ -1,0 +1,128 @@
+body{
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+}
+h1 {
+  color: #e63991;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+  color: #FDB827;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
+
+/* Headings */
+.intro {
+  margin-top: 5%;
+  font-size: 3.7rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+/* Sections */
+.white-section{
+  background-color: #F4F4F4;
+  color: black;
+}
+
+.pink-section{
+  background-color: #e63991;
+  color:#fac349;
+}
+
+/* Title Section */
+#title {
+  text-align: left;
+}
+
+.logo_img{
+  width: 8%;
+}
+
+.container-fluid {
+  padding: 2% 15%;
+}
+
+/* Features section */
+#features {
+  padding: 7% 10%;
+}
+
+.feature-box {
+  padding: 5%;
+  color: #F4F4F4;
+}
+
+.icon {
+  color: #F4F4F4;
+  margin-bottom: 2rem;
+}
+
+.icon:hover {
+  color: #FDB827;
+}
+
+/* Download button */
+.btn-light {
+  border-color: black;
+}
+
+.btn-light:hover {
+  border-color: black;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Navigation bar */
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 44px;
+  color: black;
+}
+
+/* iPhone mockup image */
+.mockup {
+  width: 295px;
+  margin-left: 30%;
+}
+
+/* adjust tablet and smaller size */
+@media (max-width:990px) {
+  #title {
+    text-align: center;
+  }
+
+  .logo_img{
+    width: 15%;
+  }
+
+  .btn-light {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+  }
+
+  .intro{
+    font-size: 3rem;
+  }
+
+  .mockup {
+    margin: auto;
+    width: 360px;
+  }
+
+  h3{
+    font-size: 50px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+
+/* Footer */
+#footer {
+  padding: 3% 10%;
+}

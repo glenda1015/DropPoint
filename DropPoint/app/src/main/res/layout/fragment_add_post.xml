@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AddPostFragment">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center"
+            android:text="@string/new_post"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/uploadPostImg"
+            android:layout_width="wrap_content"
+            android:maxWidth="300dp"
+            android:maxHeight="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="22dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/upload_image_by_clicking_on_the_image_shown_of_camera"
+            android:scaleType="centerInside"
+            android:src="@drawable/upload_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText"
+            app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_border"
+            android:drawableStart="@drawable/ic_baseline_not_listed_location_24"
+            android:drawablePadding="20dp"
+            android:hint="@string/location"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="20dp"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadPostImg"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/hoursEditText"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_border"
+            android:drawableStart="@drawable/ic_baseline_access_time_24"
+            android:drawablePadding="20dp"
+            android:hint="@string/hours_of_operation"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences|textMultiLine"
+            android:singleLine="false"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationEditText"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/tipsEditText"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_border"
+            android:drawableStart="@drawable/ic_baseline_tips_and_updates_24"
+            android:drawablePadding="20dp"
+            android:hint="@string/tips_or_personal_experience"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences|textMultiLine"
+            android:singleLine="false"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hoursEditText"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/otherEditText"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edit_text_border"
+            android:drawableStart="@drawable/ic_baseline_message_24"
+            android:drawablePadding="20dp"
+            android:hint="@string/other"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences|textMultiLine"
+            android:singleLine="false"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipsEditText"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/postBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_border"
+            android:backgroundTint="@color/pink_200"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/post"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.912"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
