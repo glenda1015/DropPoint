@@ -6,6 +6,10 @@ Discover new places: The application behaves similar to social networks like Ins
 
 Join a travelers community: DropPoint is targeted at those adventurers who like to share their latest travels along with their experiences, and recommendations. 
 
+Official website created for the completion of my capstone project: https://brendagarciac.github.io/droppoint-web/
+The website enables users with an UI to download the DropPoint mobile application from their devices.
+The page only has one functionality, however, the user is also able to read the main functions of the app!
+
 ![image](https://user-images.githubusercontent.com/85639833/209724477-364f577d-3fd8-4330-b4a2-2e34afd2d779.png)
 ![image](https://user-images.githubusercontent.com/85639833/209724486-b128355f-4599-44eb-b949-953331fdc97f.png)
 ![image](https://user-images.githubusercontent.com/85639833/209724491-efa35677-b2ad-4877-b9c8-4e8fe2d118f8.png)
